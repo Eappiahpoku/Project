@@ -8,12 +8,13 @@
   - Touch-optimized for Ghana mobile users (48px+ targets)
   - Call-to-action to full About page
   - Optimized for low-bandwidth conditions
+  - ===== UPDATED: Better desktop alignment for testimonials section =====
 -->
 
 <template>
   <section class="bg-background py-16 sm:py-20 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         
         <!-- ===== LEFT COLUMN: Edward's Story & StudyDock Creation ===== -->
         <div class="space-y-8">
@@ -84,44 +85,44 @@
         </div>
 
         <!-- ===== RIGHT COLUMN: Testimonials & Impact ===== -->
-        <div class="space-y-8">
-          <!-- Testimonials Header -->
-          <div class="text-center lg:text-left">
-            <h3 class="text-2xl font-semibold text-text mb-2">
+        <div class="space-y-8 lg:pl-4">
+          <!-- ===== UPDATED: Centered testimonials header for desktop ===== -->
+          <div class="text-center">
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-text mb-4">
               What Students Are Saying
             </h3>
-            <p class="text-gray-600">
+            <p class="text-lg text-gray-600 max-w-lg mx-auto">
               Real feedback from students using StudyDock techniques
             </p>
           </div>
 
-          <!-- Testimonials Grid (Fake testimonials for now) -->
+          <!-- ===== UPDATED: Better spaced testimonials grid ===== -->
           <div class="space-y-6">
             <!-- Testimonial 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div class="flex items-start space-x-4">
                 <!-- Avatar -->
-                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                  <span class="text-primary-900 font-semibold text-lg">AK</span>
+                <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="text-primary-900 font-bold text-lg">AK</span>
                 </div>
                 
                 <!-- Testimonial Content -->
                 <div class="flex-1">
-                  <blockquote class="text-gray-700 italic leading-relaxed">
+                  <blockquote class="text-gray-700 italic leading-relaxed text-base sm:text-lg mb-4">
                     "The Pomodoro technique from StudyDock helped me improve my focus during exam prep. 
                     The offline tools work perfectly even when my data runs out!"
                   </blockquote>
                   
                   <!-- Attribution -->
-                  <div class="mt-3 flex items-center justify-between">
+                  <div class="flex items-center justify-between">
                     <div>
-                      <p class="font-semibold text-primary">Akua Mensah</p>
+                      <p class="font-semibold text-primary text-lg">Akua Mensah</p>
                       <p class="text-sm text-gray-500">Senior High School Student</p>
                     </div>
                     
                     <!-- Star Rating -->
                     <div class="flex items-center space-x-1">
-                      <svg v-for="star in 5" :key="star" class="h-4 w-4 text-highlight fill-current" viewBox="0 0 20 20">
+                      <svg v-for="star in 5" :key="star" class="h-5 w-5 text-highlight fill-current" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     </div>
@@ -131,30 +132,30 @@
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div class="flex items-start space-x-4">
                 <!-- Avatar -->
-                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                  <span class="text-white font-semibold text-lg">KO</span>
+                <div class="w-14 h-14 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="text-white font-bold text-lg">KO</span>
                 </div>
                 
                 <!-- Testimonial Content -->
                 <div class="flex-1">
-                  <blockquote class="text-gray-700 italic leading-relaxed">
+                  <blockquote class="text-gray-700 italic leading-relaxed text-base sm:text-lg mb-4">
                     "Active recall changed how I study for university. The techniques are explained 
                     so clearly and the mobile interface makes it easy to practice anywhere."
                   </blockquote>
                   
                   <!-- Attribution -->
-                  <div class="mt-3 flex items-center justify-between">
+                  <div class="flex items-center justify-between">
                     <div>
-                      <p class="font-semibold text-primary">Kwame Osei</p>
+                      <p class="font-semibold text-primary text-lg">Kwame Osei</p>
                       <p class="text-sm text-gray-500">University of Ghana Student</p>
                     </div>
                     
                     <!-- Star Rating -->
                     <div class="flex items-center space-x-1">
-                      <svg v-for="star in 5" :key="star" class="h-4 w-4 text-highlight fill-current" viewBox="0 0 20 20">
+                      <svg v-for="star in 5" :key="star" class="h-5 w-5 text-highlight fill-current" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     </div>
@@ -163,31 +164,31 @@
               </div>
             </div>
 
-            <!-- Testimonial 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+            <!-- Testimonial 3 - Hidden on mobile, shown on desktop for better balance -->
+            <div class="hidden sm:block bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div class="flex items-start space-x-4">
                 <!-- Avatar -->
-                <div class="w-12 h-12 bg-highlight rounded-full flex items-center justify-center flex-shrink-0">
-                  <span class="text-gray-900 font-semibold text-lg">EA</span>
+                <div class="w-14 h-14 bg-highlight rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="text-gray-900 font-bold text-lg">EA</span>
                 </div>
                 
                 <!-- Testimonial Content -->
                 <div class="flex-1">
-                  <blockquote class="text-gray-700 italic leading-relaxed">
+                  <blockquote class="text-gray-700 italic leading-relaxed text-base sm:text-lg mb-4">
                     "As a teacher, I recommend StudyDock to all my students. The spaced repetition 
                     method really helps them retain information better for their WASSCE exams."
                   </blockquote>
                   
                   <!-- Attribution -->
-                  <div class="mt-3 flex items-center justify-between">
+                  <div class="flex items-center justify-between">
                     <div>
-                      <p class="font-semibold text-primary">Esi Asante</p>
+                      <p class="font-semibold text-primary text-lg">Esi Asante</p>
                       <p class="text-sm text-gray-500">Mathematics Teacher</p>
                     </div>
                     
                     <!-- Star Rating -->
                     <div class="flex items-center space-x-1">
-                      <svg v-for="star in 5" :key="star" class="h-4 w-4 text-highlight fill-current" viewBox="0 0 20 20">
+                      <svg v-for="star in 5" :key="star" class="h-5 w-5 text-highlight fill-current" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     </div>
@@ -197,23 +198,23 @@
             </div>
           </div>
 
-          <!-- Impact Stats (Fake for now) -->
-          <div class="bg-primary/5 rounded-xl p-6 border border-primary/10">
-            <h4 class="text-lg font-semibold text-primary mb-4 text-center">
+          <!-- ===== UPDATED: Better aligned impact stats ===== -->
+          <div class="bg-primary/5 rounded-xl p-6 sm:p-8 border border-primary/10">
+            <h4 class="text-xl font-semibold text-primary mb-6 text-center">
               StudyDock Impact
             </h4>
-            <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="grid grid-cols-3 gap-6 text-center">
               <div>
-                <div class="text-2xl font-bold text-primary">500+</div>
-                <p class="text-xs text-gray-600">Students Helped</p>
+                <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">500+</div>
+                <p class="text-sm text-gray-600">Students Helped</p>
               </div>
               <div>
-                <div class="text-2xl font-bold text-primary">95%</div>
-                <p class="text-xs text-gray-600">Success Rate</p>
+                <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">95%</div>
+                <p class="text-sm text-gray-600">Success Rate</p>
               </div>
               <div>
-                <div class="text-2xl font-bold text-primary">24/7</div>
-                <p class="text-xs text-gray-600">Available</p>
+                <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">24/7</div>
+                <p class="text-sm text-gray-600">Available</p>
               </div>
             </div>
           </div>
@@ -249,4 +250,5 @@ function navigateToAboutPage(): void {
   - Accessibility compliance (aria-labels, focus states)
   - Performance optimization (minimal custom CSS, utility-first approach)
   - Professional testimonial design with star ratings
+  - ===== UPDATED: Better desktop alignment and visual hierarchy =====
 -->

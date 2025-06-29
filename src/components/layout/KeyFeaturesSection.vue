@@ -167,63 +167,13 @@
 </template>
 
 <script setup lang="ts">
-// ===== Types & Interfaces =====
-interface StudyTechnique {
-  id: number
-  name: string
-  description: string
-  route?: string
-}
+// ===== REMOVED: Unused types, constants, and functions =====
+// The previous studyTechniques array and handleClickOutside function
+// were not being used in this component, so they have been removed
+// to eliminate TypeScript warnings and keep the code clean.
 
-// ===== Constants & Config =====
-/**
- * Available study techniques for reference
- * These match the techniques available in the search
- */
-const studyTechniques: StudyTechnique[] = [
-  {
-    id: 1,
-    name: 'Pomodoro Technique',
-    description: 'Time management method using 25-minute focused work sessions',
-    route: '/blog/pomodoro-technique'
-  },
-  {
-    id: 2,
-    name: 'Active Recall',
-    description: 'Testing yourself to improve memory retention',
-    route: '/blog/active-recall'
-  },
-  {
-    id: 3,
-    name: 'Spaced Repetition',
-    description: 'Reviewing information at increasing intervals',
-    route: '/blog/spaced-repetition'
-  },
-  {
-    id: 4,
-    name: 'Mind Mapping',
-    description: 'Visual representation of information and concepts',
-    route: '/blog/mind-mapping'
-  },
-  {
-    id: 5,
-    name: 'Feynman Technique',
-    description: 'Learning by teaching concepts in simple terms',
-    route: '/blog/feynman-technique'
-  }
-]
-
-// ===== Helper Functions =====
-/**
- * Close suggestions when clicking outside
- * Improves mobile UX by hiding suggestions appropriately
- */
-function handleClickOutside(event: Event): void {
-  const target = event.target as HTMLElement
-  if (!target.closest('#study-search') && !target.closest('.bg-white.rounded-lg')) {
-    // Handle any click outside functionality if needed
-  }
-}
+// This component is purely presentational and doesn't need any
+// complex logic or state management.
 </script>
 
 <!-- 

@@ -29,28 +29,47 @@ const routes: RouteRecordRaw[] = [
       }
       ,
       {
-        path: '/blog/pomodoro-technique',
+        path: '/blog/blog1',
         name: 'pomodoro',
-        component: () => import('../views/Blog/PomodoroView.vue')
+        component: () => import('../views/Blog/Blog1.vue')
       }
       ,
       {
         path: '/blog/blog2',
         name: 'active-recall',
-        component: () => import('../views/Blog/ActiveRecallView.vue')
+        component: () => import('../views/Blog/Blog2.vue')
+      }
+      
+      ,
+      {
+        path: '/blog/blog3',
+        name: 'spaced-repetition',
+        component: () => import('../views/Blog/Blog3View.vue')
       }
       ,
       {
-        path: '/blog2',
-        name: 'active-recall',
-        component: () => import('../views/Blog/ActiveRecallView.vue')
+        path: '/blog/blog4',
+        name: 'mind-mapping',
+        component: () => import('../views/Blog/Blog4View.vue')
       }
-
+      ,
+      {
+        path: '/blog/blog5',
+        name: 'richard-technique',
+        component: () => import('../views/Blog/Blog5View.vue')
+      }
         ,
       {
         path: '/blog',
         name: 'blog',
         component: () => import('../views/BlogView.vue')
+      }
+
+        ,
+      {
+        path: '/blog/blog3',
+        name: 'spaced-repetition',
+        component: () => import('../views/Blog/Blog3View.vue')
       }
     ]
   },
