@@ -156,19 +156,7 @@ function exploreStudyTechniques(): void {
 
 
 
-/**
- * Scrolls to the next section when scroll indicator is clicked
- * Improves user experience
- */
-function scrollToNext(): void {
-  const nextSection = document.querySelector('section:nth-of-type(2)')
-  if (nextSection) {
-    nextSection.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  }
-}
+
 </script>
 
 
