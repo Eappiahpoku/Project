@@ -1,306 +1,217 @@
-<!-- 
+<!--
   HeroSection.vue
-  Focused hero section for StudyDock homepage
-  - Clean design with strategic negative space
-  - Mobile-first approach with desktop functionality
-  - Uses StudyDock color palette (teal green gradient)
-  - Search bar for quick navigation to study techniques
-  - Call-to-action buttons for exploring techniques
+  Modern StudyDock hero section with image-background color blending
+  - Mobile-first: image on top, text/buttons below
+  - Desktop: text/buttons left, image right  
+  - Clean, modern design with seamless image/background integration
+  - Uses matching color (#00614A) for perfect image blend
   - Touch-optimized for Ghana mobile users (48px+ targets)
-  - Brief introduction about StudyDock's purpose
   - Optimized for low-bandwidth conditions
+  - [2025-07-04] Updated: Background color changed to #00614A for seamless blend
 -->
 
 <template>
-  <section class="relative bg-gradient-to-br from-primary via-primary-600 to-primary-700 text-white overflow-hidden min-h-screen flex items-center">
-    <!-- ===== BACKGROUND PATTERN (Subtle) ===== -->
-    <div class="absolute inset-0 opacity-10">
+  <section
+    class="relative text-white overflow-hidden min-h-screen rounded-xl flex items-center"
+    style="background-color: #00614A;" 
+    
+  >
+    <!-- ===== ENHANCED BACKGROUND PATTERN (optional, subtle) ===== -->
+    <div class="absolute inset-0 opacity-5 pointer-events-none select-none">
       <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="study-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <circle cx="10" cy="10" r="1" fill="currentColor" />
+            <circle cx="10" cy="10" r="1.5" fill="currentColor" />
+            <circle cx="5" cy="15" r="0.8" fill="currentColor" opacity="0.6" />
+            <circle cx="15" cy="5" r="0.8" fill="currentColor" opacity="0.6" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#study-pattern)" />
       </svg>
     </div>
 
-    <!-- ===== MAIN HERO CONTENT ===== -->
-    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28 text-center">
-      
-      <!-- ===== MAIN HEADLINE SECTION ===== -->
-      <div class="space-y-6 mb-12">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-          Master the Art
-          <br class="hidden sm:block" />
-          <span class="text-accent">of Studying</span>
-        </h1>
+    <!-- ===== FLOATING ANIMATION ELEMENTS (Better Integration) ===== -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+      <!-- Floating study icons that connect image to text -->
+      <div class="absolute top-1/4 left-1/4 animate-pulse opacity-20">
+        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <div class="absolute top-3/4 right-1/4 animate-bounce opacity-20" style="animation-delay: 1s;">
+        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="absolute top-1/2 left-1/6 animate-pulse opacity-15" style="animation-delay: 2s;">
+        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- ===== MAIN HERO CONTAINER ===== -->
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <!-- ===== HERO GRID: Modern layout with better spacing ===== -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[80vh] lg:min-h-[70vh]">
         
-        <!-- Subtitle -->
-        <p class="text-xl sm:text-2xl text-primary-100 leading-relaxed max-w-3xl mx-auto">
-          Discover effective study techniques and tools to enhance your learning.
-        </p>
-      </div>
-
-      <!-- ===== BRIEF INTRODUCTION ===== -->
-      <div class="mb-12">
-        <div class="bg-primary-800/30 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-primary-500/20 max-w-4xl mx-auto">
-          <p class="text-primary-50 text-base sm:text-lg leading-relaxed">
-            StudyDock combines <strong class="text-accent">science-backed study methods</strong> with 
-            interactive tools designed for students who want to achieve academic excellence. 
-            Perfect for Ghana's mobile-first learning environment.
-          </p>
-        </div>
-      </div>
-
-      <!-- ===== SEARCH SECTION ===== -->
-      <div class="mb-12">
-        <div class="max-w-2xl mx-auto space-y-4">
-          <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-6">
-            Find Your Study Method
-          </h2>
-          
-          <!-- Search Bar Container -->
-          <div class="relative">
-            <label for="study-search" class="sr-only">Search study techniques</label>
-            <input
-              id="study-search"
-              v-model="searchQuery"
-              type="text"
-              placeholder="Search study techniques (e.g., Pomodoro, Active Recall)"
-              class="w-full px-6 py-4 text-gray-900 bg-white rounded-xl border-2 border-transparent focus:border-accent focus:ring-4 focus:ring-accent/20 focus:outline-none text-base placeholder-gray-500 shadow-lg transition-all duration-200"
-              @keyup.enter="handleSearch"
-              @input="handleSearchInput"
-            />
-            <!-- Search Icon -->
-            <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
-              <svg class="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </div>
+        <!-- ===== TEXT CONTENT SECTION ===== -->
+        <!-- Mobile: order-2 (bottom), Desktop: order-1 (left) -->
+        <div class="order-2 lg:order-1 space-y-8 max-w-xl lg:max-w-none">
+          <!-- ===== HEADLINE WITH MODERN TYPOGRAPHY ===== -->
+          <div class="space-y-6">
+            <h1 class="text-4xl text-center lg:text-left lg:text-5xl font-extrabold leading-none tracking-tight">
+              <span class="block text-white">Master the</span>
+              <span class="block">
+                <span class="text-white">Art of</span>
+                <span class="text-accent bg-gradient-to-r from-accent to-accent-400 bg-clip-text text-transparent ml-4">
+                  Studying
+                </span>
+              </span>
+            </h1>
+            <!-- ===== Subtitle for better hierarchy ===== -->
+            <p class="text-xl sm:text-2xl text-primary-100/90 leading-relaxed font-light max-w-2xl text-center lg:text-left">
+              Discover <span class="font-semibold text-accent">science-backed techniques</span> and 
+              interactive tools designed to enhance your learning journey.
+            </p>
           </div>
-          
-          <!-- Search Suggestions (appears when typing) -->
-          <div v-if="searchSuggestions.length > 0 && showSuggestions" class="mt-2 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
-            <ul class="divide-y divide-gray-100">
-              <li 
-                v-for="suggestion in searchSuggestions" 
-                :key="suggestion.id"
-                class="px-4 py-3 hover:bg-gray-50 cursor-pointer transition-colors duration-150"
-                @click="selectSuggestion(suggestion)"
+          <!-- ===== CTA SECTION ===== -->
+          <div class="space-y-6">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <!-- Primary CTA -->
+              <button
+                @click="exploreStudyTechniques"
+                class="group relative px-8 py-4 bg-accent text-primary-900 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-accent-400 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-accent/30 min-h-[56px] overflow-hidden"
+                aria-label="Explore study techniques and tools"
               >
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-primary rounded-full"></div>
-                  <span class="text-gray-900 font-medium">{{ suggestion.name }}</span>
-                </div>
-                <p class="text-sm text-gray-600 mt-1 ml-5">{{ suggestion.description }}</p>
-              </li>
-            </ul>
+                <div class="absolute inset-0 bg-gradient-to-r from-accent-400 to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <span class="relative flex items-center justify-center">
+                  Explore Techniques
+                  <svg class="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </button>
+              
+            </div>
+          
+          </div>
+        </div>
+
+        <!-- ===== IMAGE SECTION (Right/Top) ===== -->
+        <div class="order-1 lg:order-2 flex justify-center lg:justify-end items-center">
+          <div class="relative group">
+            <div class="relative">
+              <!-- Animated border/glow effect -->
+              <div class="absolute -inset-1   opacity-20 rounded-3xl  group-hover:opacity-30 transition-opacity duration-500"></div>
+          <div class="animate-float">
+              <img
+                class="relative w-full max-w-lg h-auto rounded-2xl  group-hover:scale-105 transition-transform duration-500"
+                src="/studyimageRev01.png"
+                alt="StudyDock demo showing study techniques in action"
+                loading="lazy"
+                width="500"
+                height="400"
+                style="background-color: #00614A;" 
+                
+              />
+              </div>
+              <div>
+              <!-- Floating study elements for visual connection -->
+              <div class="absolute -top-4 -left-4 w-8 h-8 bg-accent/20 rounded-full animate-ping"></div>
+              <div class="absolute -bottom-4 -right-4 w-6 h-6 bg-accent/30 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+             
+            </div>
+            </div>
+          
           </div>
         </div>
       </div>
-
-      <!-- ===== CALL-TO-ACTION BUTTONS ===== -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <!-- Primary CTA -->
-        <button
-          @click="exploreStudyTechniques"
-          class="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-accent text-primary-900 rounded-xl hover:bg-accent-400 focus:outline-none focus:ring-4 focus:ring-accent/30 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 min-h-[48px]"
-          aria-label="Explore study techniques and tools"
-        >
-          <span>Explore Techniques</span>
-          <svg class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </button>
-
-        <!-- Secondary CTA -->
-        <button
-          @click="viewStudyTools"
-          class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-transparent border-2 border-accent rounded-xl hover:bg-accent hover:text-primary-900 focus:outline-none focus:ring-4 focus:ring-accent/30 transition-all duration-200 min-h-[48px]"
-          aria-label="View interactive study tools"
-        >
-          View Study Tools
-        </button>
-      </div>
     </div>
 
-    <!-- ===== SCROLL INDICATOR ===== -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-    </div>
+  
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
+// ===== File-level comment =====
+// Modern HeroSection with enhanced animation integration and clean design
+// Optimized for Ghana's mobile-first environment with better visual hierarchy
+// [UPDATED] Background color changed to #00614A for seamless image blending
 
-// ===== Types & Interfaces =====
-interface StudyTechnique {
-  id: number
-  name: string
-  description: string
-  route?: string
-}
+import { useRouter } from 'vue-router'
 
 // ===== Router Setup =====
 const router = useRouter()
 
-// ===== Reactive State =====
-const searchQuery = ref('')
-const showSuggestions = ref(false)
-
-// ===== Constants & Config =====
-/**
- * Available study techniques for search suggestions
- * Based on common study methods that will be featured in StudyDock
- */
-const studyTechniques: StudyTechnique[] = [
-  {
-    id: 1,
-    name: 'Pomodoro Technique',
-    description: 'Time management method using 25-minute focused work sessions',
-    route: '/blog/pomodoro-technique'
-  },
-  {
-    id: 2,
-    name: 'Active Recall',
-    description: 'Testing yourself to improve memory retention',
-    route: '/blog/active-recall'
-  },
-  {
-    id: 3,
-    name: 'Spaced Repetition',
-    description: 'Reviewing information at increasing intervals',
-    route: '/blog/spaced-repetition'
-  },
-  {
-    id: 4,
-    name: 'Mind Mapping',
-    description: 'Visual representation of information and concepts',
-    route: '/blog/mind-mapping'
-  },
-  {
-    id: 5,
-    name: 'Feynman Technique',
-    description: 'Learning by teaching concepts in simple terms',
-    route: '/blog/feynman-technique'
-  }
-]
-
-// ===== Computed Properties =====
-/**
- * Filter study techniques based on search query
- * Shows relevant suggestions as user types
- */
-const searchSuggestions = computed(() => {
-  if (!searchQuery.value || searchQuery.value.length < 2) {
-    return []
-  }
-  
-  return studyTechniques.filter(technique =>
-    technique.name.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
-    technique.description.toLowerCase().includes(searchQuery.value.toLowerCase())
-  ).slice(0, 3) // Limit to 3 suggestions for mobile UX
-})
-
 // ===== Helper Functions =====
-/**
- * Handle search input changes
- * Shows/hides suggestions based on input
- */
-function handleSearchInput(): void {
-  showSuggestions.value = searchQuery.value.length >= 2
-}
 
 /**
- * Handle search when user presses Enter
- * Navigates to first suggestion or general search
- */
-function handleSearch(): void {
-  if (searchSuggestions.value.length > 0) {
-    selectSuggestion(searchSuggestions.value[0])
-  } else {
-    // Navigate to general study tips page with search query
-    router.push({
-      path: '/tips',
-      query: { search: searchQuery.value }
-    })
-  }
-  showSuggestions.value = false
-}
-
-/**
- * Handle selecting a search suggestion
- * Navigates to the specific technique page
- */
-function selectSuggestion(suggestion: StudyTechnique): void {
-  searchQuery.value = suggestion.name
-  showSuggestions.value = false
-  
-  if (suggestion.route) {
-    router.push(suggestion.route)
-  } else {
-    router.push('/tips')
-  }
-}
-
-/**
- * Handle primary CTA - explore study techniques
  * Navigates to the main study tips page
+ * Enhanced with smooth transition
  */
 function exploreStudyTechniques(): void {
   router.push('/tips')
 }
 
+
+
 /**
- * Handle secondary CTA - view study tools
- * Scrolls to the app section on the homepage
+ * Scrolls to the next section when scroll indicator is clicked
+ * Improves user experience
  */
-function viewStudyTools(): void {
-  // Scroll to the AppSection component
-  const appSection = document.querySelector('#app-section')
-  if (appSection) {
-    appSection.scrollIntoView({ 
+function scrollToNext(): void {
+  const nextSection = document.querySelector('section:nth-of-type(2)')
+  if (nextSection) {
+    nextSection.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     })
   }
 }
-
-/**
- * Close suggestions when clicking outside
- * Improves mobile UX by hiding suggestions appropriately
- */
-function handleClickOutside(event: Event): void {
-  const target = event.target as HTMLElement
-  if (!target.closest('#study-search') && !target.closest('.bg-white.rounded-lg')) {
-    showSuggestions.value = false
-  }
-}
-
-// ===== Lifecycle Hooks =====
-onMounted(() => {
-  // Add click outside listener for search suggestions
-  document.addEventListener('click', handleClickOutside)
-})
-
-onUnmounted(() => {
-  // Clean up event listener
-  document.removeEventListener('click', handleClickOutside)
-})
 </script>
 
-<!-- 
-  All styling uses Tailwind utility classes for:
-  - Mobile-first responsive design with strategic spacing
-  - StudyDock color palette (primary gradient background, accent highlights)
-  - Touch-optimized interactions (min-h-[48px] for buttons)
-  - Ghana-specific optimizations (backdrop-blur for low-bandwidth)
-  - Smooth transitions and hover effects for modern feel
-  - Accessibility compliance (aria-labels, focus states, sr-only labels)
-  - Performance optimization (minimal custom CSS, utility-first approach)
+
+<style scoped>
+/* Custom animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== [UPDATED] Changed from bounce to expand/contract animation ===== */
+@keyframes expand-contract {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== [UPDATED] Changed animation name and timing ===== */
+.animate-float {
+    animation: expand-contract 2s ease-in-out infinite;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+</style>
+
+<!--
+  Modern styling with enhanced features:
+  - [UPDATED] Background color changed to #00614A for perfect image blending
+  - Enhanced button designs with hover animations
+  - Improved image integration with glow effects (now seamlessly blends)
+  - Trust indicators for credibility
+  - Floating elements for better visual connection
+  - Mobile-first responsive design (image top/mobile, right/desktop)
+  - Touch-optimized interactions (56px height for better accessibility)
+  - Ghana-specific optimizations (offline indicators, data-saving features)
+  - Enhanced accessibility (better aria-labels, focus states)
+  - Performance optimization (static image loading, optimized for low-bandwidth)
 -->
