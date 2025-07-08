@@ -57,7 +57,7 @@
         
         <!-- ===== TEXT CONTENT SECTION ===== -->
         <!-- Mobile: order-2 (bottom), Desktop: order-1 (left) -->
-        <div class="order-2 lg:order-1 space-y-8 max-w-xl lg:max-w-none">
+        <div class="order-2 lg:order-1 space-y-8 max-w-xl lg:max-w-none md:mx-auto md:text-center">
           <!-- ===== HEADLINE WITH MODERN TYPOGRAPHY ===== -->
           <div class="space-y-6">
             <h1 class="text-4xl text-center lg:text-left lg:text-5xl font-extrabold leading-none tracking-tight">
@@ -107,7 +107,7 @@
           <div class="animate-float">
               <img
                 class="relative w-full max-w-lg h-auto rounded-2xl  group-hover:scale-105 transition-transform duration-500"
-                src="/studyimageRev01.png"
+                src="/studyimageRev01.webp"
                 alt="StudyDock demo showing study techniques in action"
                 loading="lazy"
                 width="500"
