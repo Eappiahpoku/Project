@@ -28,16 +28,10 @@
             <!-- Edward's Story -->
             <div class="prose prose-lg max-w-none">
               <p class="text-lg text-gray-600 leading-relaxed">
-                <strong class="text-primary">Edward Appiah-Poku</strong> who currently attends 
-                <strong>SOS Hermann Gmeiner International College</strong> created StudyDock to 
-                address the unique challenges students face in Ghana's educational environment.
+                StudyDock was created by Edward Appiah-Poku, a student at SOS Hermann Gmeiner International College, to support students world-wide through effective and engaging study methods.
               </p>
-              
-              <p class="text-base text-gray-600 leading-relaxed mt-4">
-                Recognizing the need for <strong class="text-primary">mobile-first study solutions</strong> 
-                that work with intermittent connectivity, Edward developed this platform to combine 
-                <span class="text-primary">science-backed study techniques</span> with interactive tools 
-                designed specifically for academic success in challenging environments.
+              <p class="text-lg text-gray-600 leading-relaxed">
+                The platform combines science-backed study techniques with interactive tools, helping students stay organized, focused, and motivated throughout their academic journey.
               </p>
             </div>
           </div>
