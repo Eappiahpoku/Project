@@ -64,8 +64,7 @@
               <span class="block text-white">Master the</span>
               <span class="block">
                 <span class="text-white">Art of</span>
-                <span class="text-accent bg-gradient-to-r from-accent to-accent-400 bg-clip-text text-transparent ml-4">
-                  Studying
+                <span class="text-accent bg-gradient-to-r from-accent to-accent-400 bg-clip-text text-transparent ml-4">Studying
                 </span>
               </span>
             </h1>

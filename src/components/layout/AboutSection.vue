@@ -54,7 +54,7 @@
           <!-- Key Achievements (Fake for now) -->
           <div class="grid grid-cols-2 gap-4">
             <div class="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-100">
-              <div class="text-2xl font-bold text-primary mb-1">2024</div>
+              <div class="text-2xl font-bold text-primary mb-1">2025</div>
               <p class="text-sm text-gray-600">Project Started</p>
             </div>
             <div class="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-100">
@@ -97,21 +97,21 @@
               <div class="flex items-start space-x-4">
                 <!-- Avatar -->
                 <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                  <span class="text-primary-900 font-bold text-lg">AK</span>
+                  <span class="text-primary-900 font-bold text-lg">M</span>
                 </div>
                 
                 <!-- Testimonial Content -->
                 <div class="flex-1">
                   <blockquote class="text-gray-700 italic leading-relaxed text-base sm:text-lg mb-4">
                     "The Pomodoro technique from StudyDock helped me improve my focus during exam prep. 
-                    The offline tools work perfectly even when my data runs out!"
+                    The offline tools work perfectly anywhere at anytime!"
                   </blockquote>
                   
                   <!-- Attribution -->
                   <div class="flex items-center justify-between">
                     <div>
-                      <p class="font-semibold text-primary text-lg">Akua Mensah</p>
-                      <p class="text-sm text-gray-500">Senior High School Student</p>
+                      <p class="font-semibold text-primary text-lg">Marcel Anokye Adisi</p>
+                      <p class="text-sm text-gray-500">SOS-HGIC student</p>
                     </div>
                     
                     <!-- Star Rating -->
@@ -130,21 +130,21 @@
               <div class="flex items-start space-x-4">
                 <!-- Avatar -->
                 <div class="w-14 h-14 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                  <span class="text-white font-bold text-lg">KO</span>
+                  <span class="text-white font-bold text-lg">NK</span>
                 </div>
                 
                 <!-- Testimonial Content -->
                 <div class="flex-1">
                   <blockquote class="text-gray-700 italic leading-relaxed text-base sm:text-lg mb-4">
-                    "Active recall changed how I study for university. The techniques are explained 
-                    so clearly and the mobile interface makes it easy to practice anywhere."
+                    "Active recall changed how I study entirely. The techniques are explained 
+                    so clearly making it easy to practice."
                   </blockquote>
                   
                   <!-- Attribution -->
                   <div class="flex items-center justify-between">
                     <div>
-                      <p class="font-semibold text-primary text-lg">Kwame Osei</p>
-                      <p class="text-sm text-gray-500">University of Ghana Student</p>
+                      <p class="font-semibold text-primary text-lg">Nana Kwabena Appiah-Menka</p>
+                      <p class="text-sm text-gray-500">SOS-HGIC student</p>
                     </div>
                     
                     <!-- Star Rating -->
@@ -163,21 +163,21 @@
               <div class="flex items-start space-x-4">
                 <!-- Avatar -->
                 <div class="w-14 h-14 bg-highlight rounded-full flex items-center justify-center flex-shrink-0">
-                  <span class="text-gray-900 font-bold text-lg">EA</span>
+                  <span class="text-gray-900 font-bold text-lg">E</span>
                 </div>
                 
                 <!-- Testimonial Content -->
                 <div class="flex-1">
                   <blockquote class="text-gray-700 italic leading-relaxed text-base sm:text-lg mb-4">
                     "As a teacher, I recommend StudyDock to all my students. The spaced repetition 
-                    method really helps them retain information better for their WASSCE exams."
+                    method really helps them retain information better for any of their exams."
                   </blockquote>
                   
                   <!-- Attribution -->
                   <div class="flex items-center justify-between">
                     <div>
-                      <p class="font-semibold text-primary text-lg">Esi Asante</p>
-                      <p class="text-sm text-gray-500">Mathematics Teacher</p>
+                      <p class="font-semibold text-primary text-lg">Ms. Enyonam Dzide</p>
+                      <p class="text-sm text-gray-500">Personal Project Coordinator</p>
                     </div>
                     
                     <!-- Star Rating -->
@@ -193,25 +193,7 @@
           </div>
 
           <!-- ===== UPDATED: Better aligned impact stats ===== -->
-          <div class="bg-primary/5 rounded-xl p-6 sm:p-8 border border-primary/10">
-            <h4 class="text-xl font-semibold text-primary mb-6 text-center">
-              StudyDock Impact
-            </h4>
-            <div class="grid grid-cols-3 gap-6 text-center">
-              <div>
-                <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">500+</div>
-                <p class="text-sm text-gray-600">Students Helped</p>
-              </div>
-              <div>
-                <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">95%</div>
-                <p class="text-sm text-gray-600">Success Rate</p>
-              </div>
-              <div>
-                <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">24/7</div>
-                <p class="text-sm text-gray-600">Available</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

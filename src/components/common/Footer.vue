@@ -70,7 +70,7 @@
             <ul class="space-y-3">
               <li>
                 <a 
-                  href="#" 
+                  href="https://pomodoro.studydock.org/" 
                   class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
                   aria-label="Pomodoro Timer - Time management tool"
                 >
@@ -79,20 +79,39 @@
               </li>
               <li>
                 <a 
-                  href="#" 
+                  href="https://notes.studydock.org/" 
+                  class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
+                  aria-label="Notes - Take structured notes"
+                >
+                   Notes
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://flashcards.studydock.org/" 
                   class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
                   aria-label="Flashcard Generator - Create study flashcards"
                 >
                   Flashcard Generator
                 </a>
               </li>
+              
+            </ul>
+          </nav>
+        </div>
+
+        <!-- ===== RIGHT COLUMN: Additional Study Tools ===== -->
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold mb-4">More Tools Coming Soon</h4>
+          <nav aria-label="Additional study tools navigation">
+            <ul class="space-y-3">
               <li>
                 <a 
                   href="#" 
                   class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
-                  aria-label="Focus Mode - Distraction-free study environment"
+                  aria-label="Study Scheduler - Plan your study sessions"
                 >
-                  Focus Mode
+                  Study Scheduler
                 </a>
               </li>
               <li>
@@ -108,27 +127,18 @@
                 <a 
                   href="#" 
                   class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
-                  aria-label="Study Scheduler - Plan your study sessions"
+                  aria-label="Habit Tracker - Build productive study habits"
                 >
-                  Study Scheduler
+                  Habit Tracker
                 </a>
               </li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- ===== RIGHT COLUMN: Additional Study Tools ===== -->
-        <div class="space-y-4">
-          <h4 class="text-lg font-semibold mb-4">More Tools</h4>
-          <nav aria-label="Additional study tools navigation">
-            <ul class="space-y-3">
               <li>
                 <a 
                   href="#" 
                   class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
-                  aria-label="Habit Tracker - Build productive study habits"
+                  aria-label="Focus Mode - Distraction-free study environment"
                 >
-                  Habit Tracker
+                  Focus Mode
                 </a>
               </li>
               <li>
@@ -140,15 +150,8 @@
                   Distraction Tips
                 </a>
               </li>
-              <li>
-                <a 
-                  href="#" 
-                  class="text-primary-100 hover:text-accent transition-colors duration-200 text-sm focus:outline-none focus:underline"
-                  aria-label="Markdown Notes - Take structured notes"
-                >
-                  Markdown Notes
-                </a>
-              </li>
+              
+
             </ul>
           </nav>
         </div>
@@ -165,11 +168,6 @@
           </p>
           
           <!-- Additional Links -->
-          <div class="flex items-center space-x-6 text-sm">
-            <span class="text-primary-100">
-              Optimized for Ghana 🇬🇭
-            </span>
-          </div>
         </div>
       </div>
     </div>

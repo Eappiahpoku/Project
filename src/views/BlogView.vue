@@ -476,8 +476,8 @@
         </div>
       </div>
     </section>
-
-    <!-- ===== NEWSLETTER SIGNUP SECTION ===== -->
+<!-- 
+    ===== NEWSLETTER SIGNUP SECTION =====
     <section class="bg-primary py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -509,7 +509,7 @@
           No spam, just quality study content. Unsubscribe anytime.
         </p>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -533,7 +533,7 @@ const router = useRouter()
 const searchQuery = ref('')
 const selectedCategory = ref('')
 const selectedReadingTime = ref('')
-const emailInput = ref('')
+// const emailInput = ref('')
 
 // ===== Blog Posts Data =====
 // Using the same 5 blog posts from BlogSection as requested
@@ -663,23 +663,23 @@ function getReadingTimeLabel(value: string): string {
  * Handle newsletter subscription
  * For now shows success message, could integrate with email service
  */
-function subscribeToNewsletter(): void {
-  if (emailInput.value.trim() === '') {
-    alert('Please enter your email address')
-    return
-  }
+// function subscribeToNewsletter(): void {
+//   if (emailInput.value.trim() === '') {
+//     alert('Please enter your email address')
+// //     return
+//   // }
   
-  // Basic email validation
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  if (!emailRegex.test(emailInput.value)) {
-    alert('Please enter a valid email address')
-    return
-  }
+//   // Basic email validation
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+//   if (!emailRegex.test(emailInput.value)) {
+//     alert('Please enter a valid email address')
+//     return
+//   }
   
-  // Success message (in production, this would call an API)
-  alert(`Thanks for subscribing! We'll send study tips to ${emailInput.value}`)
-  emailInput.value = ''
-}
+//   // Success message (in production, this would call an API)
+//   alert(`Thanks for subscribing! We'll send study tips to ${emailInput.value}`)
+//   emailInput.value = ''
+// // }
 </script>
 
 <!-- 
