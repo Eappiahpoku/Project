@@ -275,8 +275,147 @@
         </div>
       </div>
 
+<!===== MOBILE APP DOWNLOAD SECTION ===== >
+      <!-- <div class="bg-gradient-to-r from-primary to-primary-600 rounded-2xl p-8 md:p-12 text-white"> -->
+        <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"> -->
+          <!-- Mobile App Content -->
+          <!-- <div> -->
+            <!-- <h3 class="text-2xl md:text-3xl font-bold mb-4"> -->
+              <!-- StudyDock Mobile App -->
+            <!-- </h3> -->
+            <!-- <p class="text-lg text-primary-100 mb-6 leading-relaxed"> -->
+              <!-- Take StudyDock with you everywhere! Our mobile app works perfectly offline 
+              and is optimized for Ghanaian mobile networks. Access all your study tools 
+              even without internet connection. -->
+            <!-- </p>
+             -->
+            <!-- Mobile App Features -->
+            <!-- <ul class="space-y-3 mb-8">
+              <li class="flex items-center">
+                <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>100% offline functionality</span> -->
+              <!-- </li>
+              <li class="flex items-center">
+                <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg> -->
+                <!-- <span>Optimized for 2G/3G networks</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Data-saving mode for low bandwidth</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Works on Android 6.0+ devices</span>
+              </li> -->
+            <!-- </ul> -->
+            
+            <!-- Download Buttons
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                @click="downloadApp('android')"
+                class="group inline-flex items-center justify-center px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-white/30 transition-all duration-200 min-h-[48px]"
+                aria-label="Download StudyDock for Android"
+              >
+                <svg class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1518-.5972.416.416 0 00-.5972.1518l-2.0223 3.5018c-.5536-.2569-1.1734-.3171-1.8272-.3171s-1.2736.0602-1.8272.3171l-2.0223-3.5018a.416.416 0 00-.5972-.1518.416.416 0 00-.1518.5972l1.9973 3.4592c-2.1869 1.1938-3.6816 3.5414-3.6816 6.2918h14c0-2.7504-1.4947-5.098-3.6816-6.2918z"/>
+                </svg>
+                <span>Download for Android</span> -->
+              <!-- </button>
+              
+              <button
+                @click="downloadApp('ios')"
+                class="group inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary focus:outline-none focus:ring-4 focus:ring-white/30 transition-all duration-200 min-h-[48px]"
+                aria-label="Download StudyDock for iOS (Coming Soon)"
+              >
+                <svg class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg> -->
+                <!-- <span>iOS Coming Soon</span>
+              </button>
+            </div>
+          </div> -->
+          
+          <!-- Mobile App Mockup -->
+          <!-- <div class="flex justify-center lg:justify-end">
+            <div class="relative"> -->
+              <!-- Phone Frame -->
+              <!-- <div class="w-64 h-96 bg-gray-900 rounded-3xl p-2 shadow-2xl">
+                <div class="w-full h-full bg-white rounded-2xl overflow-hidden"> -->
+                  <!-- Phone Screen Content -->
+                  <!-- <div class="h-full bg-gradient-to-br from-primary-50 to-white p-4 flex flex-col"> -->
+                    <!-- App Header -->
+                    <!-- <div class="flex items-center justify-between mb-6">
+                      <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                      </div>
+                      <span class="text-sm font-medium text-gray-600">StudyDock</span>
+                    </div>
+                     -->
+                    <!-- App Grid -->
+                    <!-- <div class="grid grid-cols-2 gap-3 flex-1">
+                      <div class="bg-primary rounded-xl p-3 flex flex-col items-center justify-center">
+                        <svg class="h-8 w-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xs text-white text-center">Timer</span>
+                      </div> -->
+                      
+                      <!-- <div class="bg-secondary rounded-xl p-3 flex flex-col items-center justify-center">
+                        <svg class="h-8 w-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                        <span class="text-xs text-white text-center">Cards</span>
+                      </div> -->
+                      
+                      <!-- <div class="bg-accent rounded-xl p-3 flex flex-col items-center justify-center">
+                        <svg class="h-8 w-8 text-gray-900 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                        </svg>
+                        <span class="text-xs text-gray-900 text-center">Notes</span>
+                      </div> -->
+                      
+                      <!-- <div class="bg-highlight rounded-xl p-3 flex flex-col items-center justify-center">
+                        <svg class="h-8 w-8 text-gray-900 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                        <span class="text-xs text-gray-900 text-center">Stats</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              
+              <!-- Floating Elements -->
+              <!-- <div class="absolute -top-4 -right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-lg">
+                <svg class="h-6 w-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+
+
+
+
+
+
+
       <!-- ===== WEB APP PROMOTION ===== -->
-      <div class="mt-16 text-center">
+      <!-- <div class="mt-16 text-center">
         <h3 class="text-2xl font-semibold text-text mb-4">
           Or Use Our Web Tools Right Now
         </h3>
@@ -293,7 +432,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </button>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -342,10 +481,10 @@ function notifyWhenReady(appId: string): void {
 /**
  * Open the main web tools page (external).
  */
-function exploreWebApps(): void {
-  // For now, open the notes app as the main web tool
-  window.open('https://studydocknotes.vercel.app/', '_blank', 'noopener')
-}
+// function exploreWebApps(): void {
+//   // For now, open the notes app as the main web tool
+//   window.open('https://studydocknotes.vercel.app/', '_blank', 'noopener')
+// }
 
 /**
  * Get display name for app based on ID (for notifications).
@@ -360,6 +499,21 @@ function getAppName(appId: string): string {
   }
   return names[appId] || 'New Tool'
 }
+
+/**
+ * Handle mobile app download based on platform
+ * For now, shows placeholder links but could integrate with app store APIs
+ */
+// function downloadApp(platform: 'android' | 'ios'): void {
+//   if (platform === 'android') {
+//     // Placeholder - would link to Google Play Store when app is published
+//     alert('StudyDock for Android will be available soon on Google Play Store!')
+//     // window.open('https://play.google.com/store/apps/details?id=com.studydock.app', '_blank')
+//   } else {
+//     // iOS app coming later - Fixed string escaping issue
+//     alert("StudyDock for iOS is in development. We'll notify you when it's ready!")
+//   }
+// }
 </script>
 
 <!--
